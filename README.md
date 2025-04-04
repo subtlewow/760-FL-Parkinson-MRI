@@ -9,6 +9,10 @@ git pull https://github.com/ails-lab/ntua-parkinson-dataset.git
 ```
 ## Preprocessing
 
+- The `001.png` of a higher `sY` is a higher resolution image, given `001.png` appears in all `sY` of `pd-patients/SubjectX/0.DAT/sY` subdirectories. We select the largest to ensure we work with the most detailed version, despite possible added computation and overfit risk.
+
+
+
 **preprocessed_data files are ready for direct use in 3D CNN training pipeline.**
 
 
