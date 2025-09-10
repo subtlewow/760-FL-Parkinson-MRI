@@ -21,6 +21,7 @@
 ## 📝 Table of Contents
 
 - [About](#about)
+- [Documentation](#documentation)
 - [Preprocessing](#demo)
 - [Methodology](#working)
 - [Usage](#usage)
@@ -33,6 +34,15 @@
 - [Acknowledgments](#acknowledgement)
 
 ## 🧐 About <a name = "about"></a>
+## 📚 Documentation <a name = "documentation"></a>
+
+Comprehensive API and usage docs live in `docs/`:
+
+- Preprocessing APIs: see [`docs/preprocessing.md`](docs/preprocessing.md)
+- Federated Learning APIs: see [`docs/fl_framework.md`](docs/fl_framework.md)
+- Scripts and CLI usage: see [`docs/scripts.md`](docs/scripts.md)
+- End-to-end examples: see [`docs/examples.md`](docs/examples.md)
+
 
 Write about 1-2 paragraphs describing the purpose of your project.
 
@@ -46,7 +56,24 @@ TODO
 
 ## 🎈 Usage <a name = "usage"></a>
 
-TODO
+Quickstart:
+
+```bash
+# 1) Create env (recommended)
+conda env create -f environment.yml
+conda activate sitk-env
+
+# 2) Preprocess dataset -> .npy
+python preprocessing/test_preprocess.py
+
+# 3) Start FL server
+python FL_framework/server.py
+
+# 4) Start a client (in another terminal)
+python FL_framework/client_start1.py
+```
+
+More details and options are in `docs/`.
 
 ### Example:
 
